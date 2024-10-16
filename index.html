@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+  <style>
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      border-radius: 2px;
+    }
+
+    .activity p {
+      font-size: 50px;
+    }
+
+    #img-area {
+      width: 40%;
+    }
+
+    #content-area {
+      width: 60%;
+    }
+
+    #heading {
+      font-family: Harrington;
+      font-size: 40px;
+      font-weight: bolder;
+      color: maroon;
+    }
+   
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 29px;
+    }
+    th{
+      font-size: 1.2rem;
+    }
+    td{
+      font-size: 1.2rem;
+    }
+    .modal{
+      width: 100%;
+    }
+
+    .modal-body {
+      font-size: 1.5rem;
+    }
+    .modal-dialog {
+        max-width: 900px; /* Adjust the width as needed */
+    }
+    .revision{
+      .btn {
+            background: linear-gradient(135deg, #96C9F4, #5B9BD5); /* Light blue gradient */
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+                        -5px -5px 15px rgba(255, 255, 255, 0.5);
+            color: white; /* White text for contrast */
+            font-weight: bold;
+            padding: 12px 20px; /* Added padding for a larger button */
+            font-size: 16px; /* Increased font size */
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 
+                        -2px -2px 10px rgba(255, 255, 255, 0.7);
+            transform: translateY(-3px); /* Lift effect on hover */
+        }
+        .btn:active {
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+                        inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+            transform: translateY(2px); /* Pressed effect */
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="cheers">
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px; padding-left: 10px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  
+  
+
+
+  <br>
+  <center>
+    <h1 id="heading">What did we learn today?</h1> 
+    <!-- <h3 id="heading" style="color: #5B9BD5;">Punctuation Marks</h1>  -->
+      <p style="font-size: 1.5rem;">An antonym is a word that means the opposite of another word. <br>
+        <u>For example</u>: hot and cold are antonyms, as are good and bad.</p>
+  </center>
+<p></p>
+  
+<div class="container" style="display: flex; justify-content: space-between; font-size: 14px;">
+    
+  <!-- First table -->
+  <div style="flex: 1; padding-right: 20px;">
+      <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Words</th>
+                  <th>Antonyms</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="background-color: #FFB3BA;">Small</td>
+                  <td style="background-color: #FFB3BA;">Big</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFDFBA;">Older</td>
+                  <td style="background-color: #FFDFBA;">Younger</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFFFBA;">Interested</td>
+                  <td style="background-color: #FFFFBA;">Bored</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #BAFFC9;">Finish</td>
+                  <td style="background-color: #BAFFC9;">Start</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #BAE1FF;">Follow</td>
+                  <td style="background-color: #BAE1FF;">Lead</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFCCF9;">Born</td>
+                  <td style="background-color: #FFCCF9;">Die</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #C4C6FF;">Later</td>
+                  <td style="background-color: #C4C6FF;">Earlier</td>
+              </tr>
+          
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Second table -->
+  <div style="flex: 1; padding-left: 20px; padding-right: 20px;">
+      <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Words</th>
+                  <th>Antonyms</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="background-color: #FFB6B9;">Like</td>
+                  <td style="background-color: #FFB6B9;">Dislike</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FDE2E4;">Strict</td>
+                  <td style="background-color: #FDE2E4;">Flexible / Relaxed</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFDAC1;">Boring</td>
+                  <td style="background-color: #FFDAC1;">Interesting / Exciting</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #E6E6FA;">Often</td>
+                  <td style="background-color: #E6E6FA;">Rarely</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #BDE0FE;">Trouble</td>
+                  <td style="background-color: #BDE0FE;">Harmony / Peace</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #C8E6C9;">Question</td>
+                  <td style="background-color: #C8E6C9;">Answer</td>
+              </tr>
+              <tr>
+                <td style="background-color: #FFABAB;">Attend</td>
+                <td style="background-color: #FFABAB;">Skip</td>
+            </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Third table -->
+  <div style="flex: 1; padding-left: 20px;">
+      <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Words</th>
+                  <th>Antonyms</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="background-color: #F3FFE3;">Shiny</td>
+                  <td style="background-color: #F3FFE3;">Dull</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFEB3B;">Polite</td>
+                  <td style="background-color: #FFEB3B;">Rude</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFCF99;">Quiet</td>
+                  <td style="background-color: #FFCF99;">Noisy</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #B9F6CA;">Light</td>
+                  <td style="background-color: #B9F6CA;">Heavy</td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFB7B2;">Brave</td>
+                  <td style="background-color: #FFB7B2;">Scared</td>
+              </tr>
+              <tr>
+                <td style="background-color: #FFCCB6;">Famous</td>
+                <td style="background-color: #FFCCB6;">Unknown</td>
+            </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+
+<div class="container text-center">
+  <a href="fun_time.html" class="btn btn-primary mb-5 btn-lg text-center" style="height: 50px; width: 200px; font-size: 22px;">Word Meanings</a>
+</div>
+
+
+
+
+
+</body>
+
+</html>
